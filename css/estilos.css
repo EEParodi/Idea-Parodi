@@ -1,0 +1,235 @@
+body{
+    background-image: url("Ledzep_wallp.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: size 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+img:hover{
+ opacity: 0.3;
+}
+/*header con flexbox*/
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+ }
+ .nav li {
+    display: inline;
+    width: 15%;
+    position:relative;
+    font-size: 30px;
+    color: black;
+    flex-grow: 1;
+ }
+ 
+ .nav ul li a:hover {
+    color: black;
+    background-color: blanchedalmond;
+    padding: 4px;
+ }
+ 
+ .nav a {
+     text-decoration: none;
+     padding: 4px;
+     display: inline-block;
+     padding: .5em 1.5em;
+ }
+
+/*INDEX*/
+section{
+    margin: 30px;
+    display: inline-block;
+}
+.sliderFotos {
+	width: 60%;
+	padding: 40px;
+
+}
+ /* FOOTER*/
+footer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+    height: 100px;
+    background-image: linear-gradient(red, black);
+ 
+}
+.fa {
+    padding: 25px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+  
+.fa-instagram {
+    background: #C13584;
+    color: white;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+ /* Tabla discos*/
+
+table{
+    border: 10px solid darkslateblue;
+    border-collapse: collapse; 
+    text-align: center;
+    font-size: 30px;   
+    color: blanchedalmond;
+}
+td{
+    border: 10px solid darkslateblue;
+}
+th{
+    border: 10px solid darkslateblue;
+}
+
+#discoTexto{
+    font-size: 20px;
+    color: blanchedalmond;
+
+}
+
+#historyTextoB{
+    color: blanchedalmond;
+    text-align: left;
+}
+
+#bandTexto{
+    font-size: 50px;
+    color: blanchedalmond;
+}
+
+section{
+	margin: 20px;
+	display: inline-block;
+}
+
+section article{
+    width: 1200px;
+    height: 500px;
+    padding: 30px;
+
+}
+.begTitulo{
+    text-align: left;
+}
+.exTitulo{
+    text-align: center;
+    margin: 20px 100px;
+}
+.growArt{
+    text-align: right;
+}
+p{
+    color: white;
+    font-size: 60px;
+}
+h1{
+    color: blanchedalmond;
+    font-size: 50px;
+}
+h2{
+    color: black;
+    font-size: 50px;
+}
+
+form{
+    color: blanchedalmond;
+    font-size: 20px;
+}
+
+/* GRID DE FOTOS */
+
+.gridMulti{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    gap: 15px;
+}
+
+.imgMulti{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.img2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.img3{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.img4{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.img5{
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 9;
+}
+
+.img6{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+
+  
