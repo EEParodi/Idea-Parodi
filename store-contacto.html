@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store-contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
@@ -25,55 +26,65 @@
             </ul>
         </nav>
     </header>
-    <h1>Para saber el stock disponible, complete el siguiente formulario </h1>
-    <br>
-    <form action="" method="">
-        <label for="nombreUsuario">Ingrese su nombre </label> 
-        <input type="text" id="nombreUsuario">
-        <br>
-        <label for="apellidoUsuario">Ingrese su Apellido</label> 
-        <input type="text" id="apellidoUsuario">
-        <br>
-        Ingrese su DNI     <input type="number">
-        <br>  
-        Ingrese su mail   <input type="email">
-        <br>
-        <p>Seleccione sexo</p>
-        F <input type="radio" name="Sexouser">
-        M <input type="radio" name="Sexouser">
-        <br>
-        <br>
-        <fieldset>
-            <legend>Talles Torso</legend>
-            <select name="" id="">
-                <option value="">S</option>
-                <option value="">M</option>
-                <option value="">L</option>
-                <option value="">XL</option>
-        
-            </select>
-        </fieldset>
-        <br>
-        <br>
-        <fieldset>
-            <legend>Talles Piernas</legend>
-            <select name="" id="">
-                <option value="">S</option>
-                <option value="">M</option>
-                <option value="">L</option>
-                <option value="">XL</option>
-        
-            </select>
-        </fieldset>
-        Desea subscribirse al newsletter ? <input type="checkbox">
-        <br>
-        <p>Deje algun comentario</p>
-        <textarea name="" id="" cols="50" rows="10">
-        </textarea>
-        <br>
-        <input type="submit" value="Enviar formulario"> 
-        <input type="reset" value="Recargar formulario"> 
-    </form>
+    <div class="container">
+        <form class="form-horizontal"></form>
+            <fieldset>
+                <legend class="text-center header">Para saber el stock disponible, complete el siguiente formulario</legend>
+                <!--Data general-->
+                <div class="row mb-4">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                    </div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col">
+                      <input type="number" class="form-control" placeholder="DNI" aria-label="DNI">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                    </div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col md-12">
+                        <input type="text" class="form-control" placeholder="Direccion" aria-label="Direccion">
+                    </div>
+                  </div>
+                <!--Selector sexo-->  
+                <div class="col mb-4">
+                    <legend class="col-form-label col-sm-2 pt-0">Indique su sexo</legend>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sexoUser" id="sexoMasc">
+                        <label class="form-check-label" for="sexoMasc">Hombre</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sexoUser" id="sexoFem">
+                        <label class="form-check-label" for="sexoFem">Mujer</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sexoUser" id="sexoNa">
+                        <label class="form-check-label" for="sexoNa">Otro/No aplica</label>
+                    </div>
+                 </div>
+                <!--Comentarios-->
+                 <div class="form-floating">
+                    <textarea class="form-control" placeholder="Deje algun comentario" id="textoComentario" style="height: 100px"></textarea>
+                    <label for="textoComentario" id="noComentario">Deje algun comentario..</label>
+                </div>
+                <div class="form-check form-switch mb-4">
+                    <input class="form-check-input" type="checkbox" id="newsCheck">
+                    <label class="form-check-label" for="newsCheck">Desea subscribirse al newsletter ?</label>
+                </div>
+                <!--Botones-->
+                <div class="col mb-4">
+                    <button type="submit" class="btn btn-lg btn-primary" >Enviar formulario</button>
+                    <button type="reset" class="btn btn-secondary btn-lg"> Recargar formulario</button>
+                </div>
+            </fieldset>
+
+    </div>
     <footer> 
         <a href="https://www.facebook.com/ledzeppelin" class="fa fa-facebook"></a>
         <a href="https://www.youtube.com/channel/UCaKZA66vM_TUpetUNohmR0A" class="fa fa-youtube"></a>
