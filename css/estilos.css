@@ -68,6 +68,8 @@ section{
 footer {
     height: 100%;
     width: 100%;
+    position:fixed-bottom;
+    bottom: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -231,5 +233,15 @@ form{
     grid-row-end: 9;
 }
 
+legend{
+    font-size: 50px;
+    color: blanchedalmond;
+}
 
-  
+label{
+    color: blanchedalmond;
+}
+
+#noComentario{
+    color: black;
+}
