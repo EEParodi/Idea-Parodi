@@ -1,6 +1,6 @@
 body{
-    background-image: url("Ledzep_wallp.png");
-    background-color: black;
+    background: rgb(164,32,32);
+    background: linear-gradient(0deg, rgba(164,32,32,1) 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
     background-position: center;
     background: size 100%;
@@ -76,7 +76,7 @@ footer {
     justify-content: center;
     margin: 2em 0;
     height: 100px;
-    background-image: linear-gradient(red, black);
+    background: #a42020;
  
 }
 .fa {
