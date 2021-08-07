@@ -5,7 +5,7 @@
 }
 body{
     background: rgb(164,32,32);
-    background: linear-gradient(0deg, rgba(164,32,32,1) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgb(255, 0, 0) 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
     background-position: center;
     background: cover;
@@ -14,6 +14,8 @@ body{
     font-size: 1em;
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
 }
 .index{
     height: 560px;
@@ -24,14 +26,18 @@ body.index{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
 body.contact{
-    background-image: url(Ledzep-contact.jpg);
+    background-image: url(Led-Zepellin-IV.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
 img {
@@ -86,7 +92,8 @@ footer{
     right: 0;
     height: auto;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 5px;
 }
 .contenidoFooter{
     display: flex;
@@ -187,11 +194,12 @@ footer{
 
 legend{
     font-size: 50px;
-    color: blanchedalmond;
+    color: black;
+    
 }
 
 label{
-    color: blanchedalmond;
+    color: black;
 }
 
 #noComentario{
@@ -201,8 +209,9 @@ label{
 /* BAND*/
 
 main.band{
-    margin: 50px;
-    padding-bottom: 10px;
+    margin: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
 }
 
 .bandDisplay{
@@ -212,20 +221,31 @@ main.band{
 .bandImgs{
    display: inline-flex;
     width: 100%;
-    height: 700px;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    height: 600px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     padding: 4px;
+}
+
+.bandImgs p{
+    visibility: hidden;
+}
+.bandImgs:hover p{
+    visibility: visible;
+
 }
 
 .robertPlant{
     background-image: url(../css/Band/robert-plant.jpg) ;
     width: 25%;
-    height: 500px;
+    height: 650px;
     padding: 15px;
     margin: 10px;
     background-position: center top;
     transition: 0.4s ease;  
+}
+.robertPlant p{
+    visibility: hidden;
 }
 
 .bandImgs:hover .robertPlant{
@@ -239,7 +259,7 @@ main.band{
 .jimmyPage{
     background-image: url(../css/Band/jimmy-page.jpg);
     width: 25%;
-    height: 500px;
+    height: 650px;
     padding: 15px;
     margin: 10px;
     background-position: center top;
@@ -254,10 +274,15 @@ main.band{
     background-color: black;
 }
 
+.bandImgs:hover .jimmyPage p{
+    color: blanchedalmond;
+}
+
+
 .johnpaulJones{
     background-image: url(../css/Band/John-Paul-Jones.jpg);
     width: 25%;
-    height: 500px;
+    height: 650px;
     padding: 15px;
     margin: 10px;
     background-position: center top; 
@@ -275,7 +300,7 @@ main.band{
 .johnBonham{
     background-image: url(../css/Band/john-bonham.jpg) ;
     width: 25%;
-    height: 500px;
+    height: 650px;
     padding: 15px;
     margin: 10px;
     background-position: center top;
@@ -294,19 +319,25 @@ main.band{
 
 .discoMain{
     margin: 50px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: black;
+    width: 90%;
+
 }
 
 .discoDisplay{
-    display: inline-block;
+    display: inline-flex;
     width: 100%;
-    margin: 20px;
+    margin: 15px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-#spotifyDisco{
-    display: inline-block;
-    width: 100%;
-    margin-left: 5rem;
-    align-items: center;
+#spotifyDisco iframe{
+    margin: auto;
+    padding: 35px;
 
 }
 
